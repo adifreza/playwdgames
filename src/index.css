@@ -1,0 +1,62 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-ink-950: #07090e;
+  --color-ink-900: #0b0f17;
+  --color-ink-850: #10151f;
+  --color-ink-800: #161c28;
+  --color-ink-700: #212a3b;
+  --color-ink-600: #33405a;
+
+  --color-accent-400: #38bdf8;
+  --color-accent-500: #0ea5e9;
+  --color-accent-600: #0284c7;
+  --color-violet-400: #a78bfa;
+
+  --color-fg: #e8ecf3;
+  --color-fg-dim: #9aa7bd;
+  --color-fg-mute: #64748b;
+
+  --radius-card: 0.75rem;
+  --ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-ink-900);
+  color: var(--color-fg);
+  font-family: 'Segoe UI', system-ui, -apple-system, 'Inter', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+/* scrollbar tipis modern */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-ink-700) transparent;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--color-ink-700);
+  border-radius: 4px;
+}
+
+/* fokus ring konsisten untuk aksesibilitas */
+:focus-visible {
+  outline: 2px solid var(--color-accent-400);
+  outline-offset: 2px;
+}
+
+.glass {
+  background: color-mix(in srgb, var(--color-ink-850) 82%, transparent);
+  backdrop-filter: blur(12px);
+}

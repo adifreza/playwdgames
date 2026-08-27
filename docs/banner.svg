@@ -1,0 +1,45 @@
+<svg width="1280" height="420" viewBox="0 0 1280 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PlayWD Games">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b0f17"/>
+      <stop offset="1" stop-color="#07090e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.4" r="0.6">
+      <stop offset="0" stop-color="#0ea5e9" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#0ea5e9" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="420" fill="url(#bg)"/>
+  <rect width="1280" height="420" fill="url(#glow)"/>
+
+  <!-- abstract carousel tiles -->
+  <g opacity="0.5">
+    <rect x="812" y="150" width="96" height="128" rx="12" fill="#212a3b"/>
+    <rect x="924" y="130" width="110" height="150" rx="12" fill="#2a344a"/>
+    <rect x="1050" y="150" width="96" height="128" rx="12" fill="#212a3b"/>
+  </g>
+  <rect x="924" y="118" width="128" height="176" rx="14" fill="none" stroke="url(#accent)" stroke-width="3"/>
+  <ellipse cx="988" cy="210" rx="220" ry="150" fill="url(#accent)" opacity="0.10" filter="url(#soft)"/>
+
+  <!-- wordmark -->
+  <text x="96" y="176" font-family="Segoe UI, system-ui, sans-serif" font-size="30" letter-spacing="8" fill="#64748b" font-weight="700">GAME&#160;LAUNCHER</text>
+  <text x="94" y="256" font-family="Segoe UI, system-ui, sans-serif" font-size="82" font-weight="800" fill="url(#accent)">PlayWD Games</text>
+  <text x="96" y="312" font-family="Segoe UI, system-ui, sans-serif" font-size="26" fill="#9aa7bd">Playnite-light &#183; fullscreen ala PS5 &#183; emulator-ready &#183; offline-first</text>
+
+  <!-- chips -->
+  <g font-family="Segoe UI, system-ui, sans-serif" font-size="17" fill="#e8ecf3">
+    <rect x="96" y="344" width="104" height="34" rx="17" fill="#161c28"/><text x="118" y="366">Tauri v2</text>
+    <rect x="212" y="344" width="118" height="34" rx="17" fill="#161c28"/><text x="234" y="366">React 19</text>
+    <rect x="342" y="344" width="88" height="34" rx="17" fill="#161c28"/><text x="364" y="366">Rust</text>
+    <rect x="442" y="344" width="104" height="34" rx="17" fill="#161c28"/><text x="464" y="366">SQLite</text>
+    <rect x="558" y="344" width="150" height="34" rx="17" fill="#161c28"/><text x="580" y="366">~11 MB binary</text>
+  </g>
+</svg>
